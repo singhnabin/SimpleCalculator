@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Domine"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Simple Calculator</title>
+
+    <!--  -->
+
+    <style></style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="calculator">
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <form action="" id="form">
+              <div class="calc-text">Simple Calculator</div>
+              <div class="result">
+                <input type="text" id="display" disabled placeholder="0" />
+              </div>
+              <br />
+              <div class="allButton">
+                <input
+                  type="button"
+                  value="Calc"
+                  id="keys"
+                  onclick="toScreen('c')"
+                />
+                <input
+                  type="button"
+                  value="DEL"
+                  id="keys"
+                  onclick="backspace()"
+                />
+                <input type="button" value="x^2" id="keys" onclick="power()" />
+                <input
+                  type="button"
+                  value="+"
+                  id="keys"
+                  onclick="toScreen('+')"
+                />
+              </div>
+              <br />
+              <div class="allButton">
+                <input
+                  type="button"
+                  value="7"
+                  id="keys"
+                  onclick="toScreen('7')"
+                />
+                <input
+                  type="button"
+                  value="8"
+                  id="keys"
+                  onclick="toScreen('8')"
+                />
+                <input
+                  type="button"
+                  value="9"
+                  id="keys"
+                  onclick="toScreen('9')"
+                />
+                <input
+                  type="button"
+                  value="-"
+                  id="keys"
+                  onclick="toScreen('-')"
+                />
+              </div>
+
+              <br />
+              <div class="allButton">
+                <input
+                  type="button"
+                  value="4"
+                  id="keys"
+                  onclick="toScreen('4')"
+                />
+                <input
+                  type="button"
+                  value="5"
+                  id="keys"
+                  onclick="toScreen('5')"
+                />
+                <input
+                  type="button"
+                  value="6"
+                  id="keys"
+                  onclick="toScreen('6')"
+                />
+                <input
+                  type="button"
+                  value="*"
+                  id="keys"
+                  onclick="toScreen('*')"
+                />
+              </div>
+
+              <br />
+              <div class="allButton">
+                <input
+                  type="button"
+                  value="1"
+                  id="keys"
+                  onclick="toScreen('1')"
+                />
+                <input
+                  type="button"
+                  value="2"
+                  id="keys"
+                  onclick="toScreen('2')"
+                />
+                <input
+                  type="button"
+                  value="3"
+                  id="keys"
+                  onclick="toScreen('3')"
+                />
+                <input
+                  type="button"
+                  value="/"
+                  id="keys"
+                  onclick="toScreen('/')"
+                />
+              </div>
+
+              <br />
+              <div class="allButton button-last">
+                <input
+                  type="button"
+                  value="."
+                  id="keys"
+                  onclick="toScreen('.')"
+                />
+                <input
+                  type="button"
+                  value="0"
+                  id="keys"
+                  onclick="toScreen('0')"
+                />
+
+                <input
+                  type="button"
+                  value="="
+                  id="equal"
+                  onclick="calculate()"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script src="js/calculate.js"></script>
+  </body>
+</html>
